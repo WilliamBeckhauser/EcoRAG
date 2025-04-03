@@ -58,7 +58,7 @@ EcoRAG tracks:
 1. **Clone the repository**
 
 ```bash
-git clone https://github.com/yourusername/ecorag.git
+git clone https://github.com/WilliamBeckhauser/ecorag.git
 cd ecorag
 ```
 
