@@ -80,7 +80,7 @@ pip install -r requirements.txt
 ```env
 # Ollama LLM settings
 OLLAMA_BASE_URL=http://localhost:11434
-OLLAMA_MODEL=llama2
+OLLAMA_MODEL=llama3:8b
 
 # PostgreSQL connection
 POSTGRES_DBNAME=your_dbname
@@ -104,9 +104,9 @@ Create a `.env` file (or update the existing one) with the following variables:
 
 ```env
 # API Tokens (set only if necessary)
-OPENROUTER_TOKEN=se precisar
-API_KEY_OPENAI=se precisar
-API_KEY_GOOGLE=se precisar
+OPENROUTER_TOKEN="if necessary"
+API_KEY_OPENAI="if necessary"
+API_KEY_GOOGLE="if necessary"
 # Ollama does not require any token here
 
 # PostgreSQL credentials (substitua pelos seus dados)
@@ -138,12 +138,12 @@ Next, create the graphs. The code currently uses the ollama3.1 8b model via Olla
 python src/utils/graph_creator.py \
   --neo4j_uri "your_uri" \
   --neo4j_user "neo4j" \
-  --neo4j_password "your_passwork" \
+  --neo4j_password "your_passworw" \
   --postgres_schema "graph" \
   --postgres_table "tablename" \
   --id_column "id" \
-  --title_column "nome da coluna que será para c" \
-  --classification_column "coluna com a label resposta"
+  --title_column "title" \
+  --classification_column "label"
 ```
 
 ### 4. Running the Graph RAG Experiment
