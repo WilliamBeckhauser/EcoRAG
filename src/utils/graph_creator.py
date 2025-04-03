@@ -72,7 +72,7 @@ def load_data_from_postgres(
     return data
 
 
-def get_topic_from_llama(text: str, model_name: str = "llama3.2:1b") -> str:
+def get_topic_from_llama(text: str, model_name: str = "llama3:8b") -> str:
     """
     Sends the news headline to the Llama3:8b model via Ollama to extract the main topic.
 
